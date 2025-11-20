@@ -35,8 +35,12 @@ def decrypter(textesecret, vardico_decryp):
 ##    with open(NOMFIC_OUT, 'wb')as ficor:
 ##        pickle.dump(self, ficor)
 
-input("~~~~Encrypt or decrypt your messages with Caesar discrepancy~~~~")
-input("Pay attention : not insert special characters (é,à,è,$...)")
+print("~~~~Encrypt or decrypt your messages with Caesar discrepancy~~~~")
+print()
+time.sleep(0.5)
+print("---Pay attention ! Not insert special characters (é,à,è,$...)")
+print()
+time.sleep(0.5)
 z=input("Do you want translate since (h)ere or since a (c)ard index :")
 ##if z=="c" or z=="C":
 ##    pass
@@ -60,9 +64,9 @@ z=input("Do you want translate since (h)ere or since a (c)ard index :")
 ##            print("Lecture...")
 ##    
 if z=="h" or z=="Z":
-    a = input("Do you want (e)ncrypt or (d)ecrypt ? :")
+    a = input("---Do you want (e)ncrypt or (d)ecrypt ? :")
     if a =="e" or a =="E":
-        nbr = int(input("What discrepancy do you want ? Ex : 7 Min: 1 Max: 26 If you want try all possibilities, enter 0 : "))
+        nbr = int(input("---What discrepancy do you want ? Ex : 7 Min: 1 Max: 26 If you want try all possibilities, enter 0 : "))
         if nbr==0:
             message = input("Message to encrypt :")
             for g in range(26):
@@ -107,3 +111,4 @@ if z=="h" or z=="Z":
 
            
    
+
