@@ -151,3 +151,4 @@ def confirmer_quitter():
 if __name__=="__main__":
     controleur = Kontroleur()
         
+
